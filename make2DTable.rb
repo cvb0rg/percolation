@@ -1,3 +1,4 @@
+
 # 2D representation of a 2D grid mesh
 
 def make2Dtable(someArray)
@@ -16,6 +17,7 @@ def make2Dtable(someArray)
 	end
 	horLine.call
 end
+
 
 
 

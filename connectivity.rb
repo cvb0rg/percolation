@@ -1,7 +1,8 @@
 # From unionFindAlgorithms.rb
-
+	
+	# Find the parent of an element
 	def quickUnionRoot(idTag, p)
-		depth = 0
+		depth = 0 # Steps removed from the parent
 		while (p != idTag[p])
 			p = idTag[p]
 			depth += 1
@@ -53,5 +54,5 @@
 				idTag[quickUnionRoot(idTag, q)[0]] = quickUnionRoot(idTag, p)[0]
 			end
 		end
-		return
 	end
+

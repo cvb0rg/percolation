@@ -1,5 +1,5 @@
 require_relative "make2Dtable"
-require_relative "connectivity"
+require_relative "CONNECTIVITY"
 
 row = 10
 col = 10
