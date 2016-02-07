@@ -16,17 +16,12 @@ treeSize = []
 	end
 end
 
-# Test array
-# someArray = [[1, 1, 0, 0, 1, 1, 1, 0, 0, 1], [0, 1, 0, 0, 0, 1, 0, 1, 0, 1], [0, 0, 1, 0, 0, 0, 1, 0, 1, 1]]
-
 
 (0...(row * col + 2)).each do |i| idIndex << i end
 (0...(row * col + 2)).each do |i| idTag << i end
 (0...(row * col + 2)).each do |i| treeSize << 1 end
 
-# p idIndex
-# p idTag
-# p treeSize
+# Draw the 2D table for human readability 
 make2Dtable(someArray)
 
 
@@ -43,6 +38,7 @@ make2Dtable(someArray)
 	end
 end
 
+# Parse along the rows and unite all consecutive 0s.
 (0...row).each do |r|
 	(0...col).each do |c|
 		index = r * col + c 
@@ -54,6 +50,7 @@ end
 	end
 end
 
+# Parse down columns and connect cells with 0 value
 (0...col).each do |c| 
 	(0...row).each do |r|
 		index = c + r * col
